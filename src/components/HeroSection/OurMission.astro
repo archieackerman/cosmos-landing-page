@@ -10,7 +10,7 @@ const { className } = Astro.props;
 <section class={className}>
     <Text className="our-mission-description" text="At odissey, our mission is to inspire, educate, and ignite your passion for the cosmos. We are your premier destination for all things related to space exploration, astronomy, and the mysteries of the universe. Whether you're a seasoned astronomer or a curious novice, join us on a journey to the furthest reaches of the cosmos. "></Text>
     <div class="action-buttons">
-        <Button className="" bgColor="black" textColor="white" span="Get Started"></Button>
+        <Button className="primary-button" bgColor="black" textColor="white" span="Get Started"></Button>
         <Button className="secundary-button" bgColor="white" textColor="black" span="Watch Video"></Button>
     </div>
 </section>
@@ -39,6 +39,23 @@ const { className } = Astro.props;
     }
     
 	@media (min-width: 1920px) { 
-
+       .our-mission-description {
+            max-width: 800px;
+        }
+        .action-buttons {
+            display: flex;
+            flex-direction: row;
+        }
+        section {
+            grid: 1fr 1fr / 1fr;
+        }
+        .secundary-button {
+            box-shadow: 0 1px 2px rgba(83, 100, 255, 0.32);
+            transition: all 0.1s ease-out;
+        } 
+        .primary-button {
+            box-shadow: 0 1px 2px rgba(83, 100, 255, 0.32);
+            transition: all 0.1s ease-out;
+        } 
     } 
 </style>
