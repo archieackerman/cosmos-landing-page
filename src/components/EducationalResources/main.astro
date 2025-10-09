@@ -70,7 +70,7 @@ const imgRoot = './educational-resources/img'
             
     }
     
-	@media (1060px < width <= 1920px) {
+	@media (1060px < width <= 1919px) {
         .overview {
             display: flex;
             flex-direction: column;
@@ -92,7 +92,24 @@ const imgRoot = './educational-resources/img'
     }
     
 	@media (min-width: 1920px) { 
-        
+        .overview {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .overview-title {
+            width: 800px;
+            text-align: center;
+        }
+        .resource-list {
+            position: relative;
+            /* I chose -200px  because it looked better in the resulting positon*/
+            top: -200px;
+            display: grid;
+            justify-items: center;
+            grid: 1fr /  1fr 1fr 1fr;   
+            height: 150px;
+        }
     }
 </style>
 

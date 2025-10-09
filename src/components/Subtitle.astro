@@ -29,7 +29,11 @@ const { className, subtitle } = Astro.props;
             line-height: var(--line-height-subtitle-mobile);
         }
     }
-	@media (max-width: 1920px) {
-
+	@media (min-width: 1920px) {
+        h2 {
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-subtitle-mobile);
+            line-height: var(--line-height-subtitle-mobile);
+        }
     }
 </style>

@@ -28,7 +28,12 @@ const { className, title } = Astro.props;
             margin: 0;
         }
     }
-	@media (max-width: 1920px) {
-
+	@media (min-width: 1920px) {
+        h1 {
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-large);
+            line-height: var(--line-height-large);
+            margin: 0;
+        }
     }
 </style>

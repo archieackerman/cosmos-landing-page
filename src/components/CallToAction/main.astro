@@ -87,7 +87,31 @@ const callToActionImgDir = './call-to-action/img'
     }
     
 	@media (min-width: 1920px) { 
-        
+        .subscribe-section {
+            flex-direction: row;
+            align-items: center;
+        }
+        .call-to-action {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .call-to-action-title {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 50.4px;
+            text-align: left;
+            margin: 0;
+        }
+        .call-to-action-text {
+            max-width: 398px;
+            
+        }
+        .input-action {
+            width: 416px;
+        }
     }
     .call-to-action-title, .call-to-action-text {
         color: var(--color-text-white);

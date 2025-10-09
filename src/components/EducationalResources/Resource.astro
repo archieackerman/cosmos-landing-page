@@ -82,6 +82,21 @@ const { title, stepNumber, description, className } = Astro.props;
     }
     
 	@media (min-width: 1920px) { 
-        
+        .resource-card {
+            width: calc(267px - 25px);
+            height: 282px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+        }
+        .step-number {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 40.32px;
+        }
+        .subtitle {
+            margin: 15px 0;
+        }
     }
 </style>

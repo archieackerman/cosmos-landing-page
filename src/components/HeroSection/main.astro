@@ -89,6 +89,28 @@ className="earth-overview">
     }
     
 	@media (min-width: 1920px) { 
-
+        .hero-description {
+            display: grid;
+            grid: 265px / 1fr 1fr;
+            margin-top: 0;
+        } 
+        .our-mission {
+            margin-top: 0;
+            grid-column: 1 / 2;
+        }
+        .astronaut-stats {
+            /* I justified the content in order to put the astronaut image at the right */
+            /* If you remove this, the image will be kind of moved to the left a little*/
+            display: flex;
+            justify-content: end;
+            grid-column: 2 / 3;
+            /* -120% it's a magic number. I choosed it because it looks better in the final result. */
+            /* This was made in order to move up the image */
+            position: relative;
+            top: -120%;
+        }
+        .earth-overview {
+            padding: 30px;
+        }
     } 
 </style>
